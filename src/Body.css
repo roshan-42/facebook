@@ -1,0 +1,10 @@
+/* .col-md-6 {
+  border: 2px solid #dd1616;
+  padding: 10px;
+  margin: 10px 0;
+} */
+p.text {
+  font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}

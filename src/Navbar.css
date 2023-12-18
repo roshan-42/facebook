@@ -1,0 +1,8 @@
+div.nav {
+  background-color: blue !important;
+  color: white; /* Add color property for better visibility */
+}
+input,
+button {
+  margin: 10px;
+}
