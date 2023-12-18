@@ -34,8 +34,8 @@ function Body() {
             Connect with friends and the world around you on Facebook.
           </p>
         </div>
-        <div className="col-md-3">
-          <h1>Registration Form</h1>
+        <div className="col-md-3 shadow p-3 mb-5 bg-white rounded">
+          <h1>Registration</h1>
           <form onSubmit={registeruser}>
             <input
               type="text"
