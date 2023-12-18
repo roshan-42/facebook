@@ -7,8 +7,18 @@ function Body() {
   const [password, setPassword] = useState("");
   const [cpassword, setCpassword] = useState("");
 
-  function register() {
-    alert("msg");
+  function registeruser(event) {
+    event.preventDefault();
+    var users = JSON.parse(localStorage.getItem("users") || "[]");
+    var newuser = {
+      Fname: fname,
+      Lname: lname,
+      Password: password,
+      confirmPassword: cpassword,
+    };
+    users.push(newuser);
+    localStorage.setItem("users", JSON.stringify(users));
+    alert("registration is successful");
   }
 
   return (
@@ -26,7 +36,7 @@ function Body() {
         </div>
         <div className="col-md-3">
           <h1>Registration Form</h1>
-          <form onSubmit={register}>
+          <form onSubmit={registeruser}>
             <input
               type="text"
               className="form-control"
